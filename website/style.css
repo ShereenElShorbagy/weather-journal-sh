@@ -1,23 +1,26 @@
 body{
-    background: #fffff8;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #app{
     display: grid;
-    grid-auto-rows: minmax(150px, auto);
+    grid-auto-rows: minmax(50px, 100px);
     /* grid-template-columns:  */
     height:100vh;
-    background: #f23557;
-    color: #f0d43a;
+    color: rgb(8, 1, 29);
     justify-content: center;
     grid-gap: 1em;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
 }
 
-.holder{
 
+.holder{
+    justify-content: center;
+    text-align: center;
+    height: 30px;
 }
 
 .entry{
@@ -25,26 +28,51 @@ body{
 }
 
 #entryHolder{
-
+    font-family: fantasy;
 }
 
 #date{
-
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, sans-serif;
 }
 
 #temp{
-
+    font-family: monospace;
+    font-size: 60px;
 }
 
-#content{
+#city{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+}
 
+#description{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-top: 20px;
+}
+#content{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#feelings{
+    margin: auto;
+    height: 40px;
+    margin-bottom: 10px;
 }
 
 .headline {
-
+    margin-bottom: 30px;
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .title{
-
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /*  Basic Styling To Override Default For Basic HTML Elements */
@@ -54,35 +82,49 @@ label{
 }
 
 input{
+    text-align: center;
+    justify-content: center;
     display:block;
     height: 60px;
     width: 320px;
-    background:#22b2da;
-    color: #f0d43a;
+    background:rgba(59, 74, 107, .4);
+    color: black;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
     border: none;
 }
 
 button{
-    width: 400px;
-    height: 100px;
+    width: 100px;
+    height: 50px;
     background: #3b4a6b;
-    color: #f0d43a;
+    border-radius: 50px;
+    color: black;
     font-size: 26px;
     font-family: 'Oswald', sans-serif;
     border: none;
     box-shadow: 2px 4px 5px #444;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 h1{
     font-size: 36px;
 }
 
 textarea{
-    background:#22b2da;
-    color: #f0d43a;
+    background:rgba(59, 74, 107, .4);
+    color: black;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+}
+
+#zip{
+    margin: auto;
+    margin-top: 10px;
 }
 /* Reset style for HTML element on active to have no border*/
 input:focus,
@@ -93,19 +135,19 @@ button:focus {
 }
 /* Style for Placeholder Text*/
 ::placeholder { /* Firefox, Chrome, Opera */ 
-    color: #f0d43a; 
+    color: black; 
     font-family: 'Oswald', sans-serif;
 
 } 
   
 :-ms-input-placeholder { /* Internet Explorer 10-11 */ 
-    color: #f0d43a; 
+    color: black; 
     font-family: 'Oswald', sans-serif;
 
 } 
   
 ::-ms-input-placeholder { /* Microsoft Edge */ 
-    color: #f0d43a; 
+    color: black; 
     font-family: 'Oswald', sans-serif;
 
 } 

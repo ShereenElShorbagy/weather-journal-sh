@@ -67,7 +67,7 @@ const updateUI = async() => {
         document.getElementById('date').innerHTML = newWeather.newDate;
         document.getElementById('description').innerHTML = newWeather.desc;
         document.getElementById('temp').innerHTML = newWeather.temp + '&degC';
-        document.getElementById('content').innerHTML = newWeather.feelings;
+        document.getElementById('content').innerHTML = 'I am ' + newWeather.feelings;
     } catch (error) {
         console.log('error',error);
     }
