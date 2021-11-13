@@ -105,8 +105,8 @@ button{
     border: none;
     box-shadow: 2px 4px 5px #444;
     margin: auto;
-    margin-top: 0;
     margin-bottom: 0;
+    margin-top: 0;
     cursor: pointer;
 }
 h1{
