@@ -2,10 +2,10 @@
 
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
+let newDate = (d.getMonth()+1)+'.'+ d.getDate()+'.'+ d.getFullYear();
 
-let baseURL = 'https://api.openweathermap.org/data/2.5/weather?zip=';
-let api = ',&appid=72ae9e382324d9bc05f5d65883f669c8&units=metric';
+const baseURL = 'https://api.openweathermap.org/data/2.5/weather?zip=';
+const apiKey = ',&appid=72ae9e382324d9bc05f5d65883f669c8&units=metric';
 const server = 'http://127.0.0.1:3000';
 
 function weather(){
@@ -32,7 +32,7 @@ function weather(){
 
 const getWeatherData = async(zip) => {
     try{
-        const res = await fetch(baseURL + zip + api);
+        const res = await fetch(baseURL + zip + apiKey);
         const weather = await res.json();
         return weather;
     }
