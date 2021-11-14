@@ -2,7 +2,7 @@
 
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = (d.getMonth()+1)+'.'+ d.getDate()+'.'+ d.getFullYear();
+let newDate = (d.getMonth() + 1)+'.'+ d.getDate()+'.'+ d.getFullYear();
 
 const baseURL = 'https://api.openweathermap.org/data/2.5/weather?zip=';
 const apiKey = ',&appid=72ae9e382324d9bc05f5d65883f669c8&units=metric';
@@ -14,9 +14,9 @@ function weather(){
 
     getWeatherData(zip).then((data)=>{
         if(data.cod != 200){
-            alert('Wrong Zip Code');
+            alert('Wrong Zip Code Entered');
         }
-        else if(data){
+        if(data){
             const allData = {
                 city : data.name,
                 temp : data.main.temp,
