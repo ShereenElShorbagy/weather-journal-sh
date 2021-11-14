@@ -24,10 +24,10 @@ function weather(){
                 feelings: feelings,
                 desc : data.weather[0].description,
             };
-            postWeatherData(server + '/postWeatherData', allData);
+            postWeatherData(server + '/postWeatherData', allData)
+            .then(() => updateUI());
         }
     })
-    .then(updateUI);
 }
 
 const getWeatherData = async(zip) => {
